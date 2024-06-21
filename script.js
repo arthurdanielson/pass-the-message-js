@@ -14,7 +14,14 @@ submit.addEventListener("click", (event) => {
   getMessage()
 })
 
+/**
+ * Retrieves the message from the input field and displays it in the output field.
+ * After displaying the message, it clears the input field.
+ */
 function getMessage() {
-  messageOut.textContent = messageIn.value
-  messageIn.value = ""
+  // Get the value of the input field and display it in the output field
+  messageOut.textContent = messageIn.value;
+
+  // Clear the input field
+  messageIn.value = "";
 }
